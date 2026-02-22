@@ -5,20 +5,20 @@
 class Dbquery < Formula
   desc "Natural language SQL CLI for SQLite, Postgres, and MySQL"
   homepage "https://github.com/samyou/dbquery"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/samyou/dbquery/releases/download/v0.1.0/dbquery_0.1.0_Darwin_x86_64.tar.gz"
-      sha256 "6892e1ac7be9dad10c149ee5a57f14e0c6146e87025e21bee2013b870a94003f"
+      url "https://github.com/samyou/dbquery/releases/download/v0.1.1/dbquery_0.1.1_Darwin_x86_64.tar.gz"
+      sha256 "f00aaae8b15d76d0932b4eff729123f8e5dfd69fae5a2724ea2b278ac6bb3e81"
 
       define_method(:install) do
         bin.install "dbquery"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/samyou/dbquery/releases/download/v0.1.0/dbquery_0.1.0_Darwin_arm64.tar.gz"
-      sha256 "f288b99483e68c9c5090dc656eddabfac6a3e962328d9f239630d6abb56ce8d8"
+      url "https://github.com/samyou/dbquery/releases/download/v0.1.1/dbquery_0.1.1_Darwin_arm64.tar.gz"
+      sha256 "e5674f6b227153e78e3cfc03f2534efc97603ad7621e134331567cd7dec9a43e"
 
       define_method(:install) do
         bin.install "dbquery"
@@ -28,15 +28,15 @@ class Dbquery < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/samyou/dbquery/releases/download/v0.1.0/dbquery_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "3b2f24f952a959289cb41081b57ae3a065a106a9445056a2438f8197ce471019"
+      url "https://github.com/samyou/dbquery/releases/download/v0.1.1/dbquery_0.1.1_Linux_x86_64.tar.gz"
+      sha256 "2955a6c366c2b5039a47a68a1fbbc22f5cd0c6b2e34171d2d06f2030a32f5c3d"
       define_method(:install) do
         bin.install "dbquery"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/samyou/dbquery/releases/download/v0.1.0/dbquery_0.1.0_Linux_arm64.tar.gz"
-      sha256 "85fe139e7f8156c4a31d059dc959f5f90f360d4c4a72758f6b1815d2137ebad0"
+      url "https://github.com/samyou/dbquery/releases/download/v0.1.1/dbquery_0.1.1_Linux_arm64.tar.gz"
+      sha256 "7f199c2fdcd49c4b76639341e791b5f1bd8f4355b90999223b8dd8a6f2d939c6"
       define_method(:install) do
         bin.install "dbquery"
       end
