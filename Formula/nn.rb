@@ -5,20 +5,20 @@
 class Nn < Formula
   desc "Quick terminal notes CLI with date-based markdown files"
   homepage "https://github.com/samyou/nn"
-  version "0.1.1"
+  version "0.1.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/samyou/nn/releases/download/v0.1.1/nn_0.1.1_Darwin_x86_64.tar.gz"
-      sha256 "c897c24f07af32fcebba384be280f58ffd51dfc045bd6f40fada81c79b8b655d"
+      url "https://github.com/samyou/nn/releases/download/v0.1.2/nn_0.1.2_Darwin_x86_64.tar.gz"
+      sha256 "946abf3c500bea6e99e5f3158959c3b91530b6dc3a9b041e5694f86f51beac48"
 
       define_method(:install) do
         bin.install "nn"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/samyou/nn/releases/download/v0.1.1/nn_0.1.1_Darwin_arm64.tar.gz"
-      sha256 "60de34ffd50264a272681c0ad95713621996e2208e3ca9719b73e0eac5230c81"
+      url "https://github.com/samyou/nn/releases/download/v0.1.2/nn_0.1.2_Darwin_arm64.tar.gz"
+      sha256 "f36290228565af3937a443627c1b991e23104b2603dc3a4575c1c0f8dd620ccd"
 
       define_method(:install) do
         bin.install "nn"
@@ -28,15 +28,15 @@ class Nn < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/samyou/nn/releases/download/v0.1.1/nn_0.1.1_Linux_x86_64.tar.gz"
-      sha256 "4fe3718ce65bf67252c0d70887a7dac80503c461a62822a7aeb2d41b90c02801"
+      url "https://github.com/samyou/nn/releases/download/v0.1.2/nn_0.1.2_Linux_x86_64.tar.gz"
+      sha256 "bc8a71e26ee0bca6d2c8c73c46e678173597ddb2a8b98b71539b99b08e32882f"
       define_method(:install) do
         bin.install "nn"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/samyou/nn/releases/download/v0.1.1/nn_0.1.1_Linux_arm64.tar.gz"
-      sha256 "807504707b511f9f12bd8f833bc9faa4c2fd05c32c3b00018cd964d66ee67ef6"
+      url "https://github.com/samyou/nn/releases/download/v0.1.2/nn_0.1.2_Linux_arm64.tar.gz"
+      sha256 "fb3857d7dd0d498e0c75024e264cb56afc33d268aa52c238d0a823bda3ca1dde"
       define_method(:install) do
         bin.install "nn"
       end
